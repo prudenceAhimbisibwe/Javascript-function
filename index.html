@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+</head>
+<body>
+    <script>
+        // Write a JavaScript program which iterates the integers from 1 to 100. But for
+        // multiples of three print "Fizz" instead of the number and for the multiples of five print
+        // "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+        for ( var i = 1; i <= 100; i++ )
+
+        if ( i%3 === 0 && i%5 === 0 ){
+         console.log( i + " FizzBuzz" );
+        }
+        else if ( i%3 === 0 ) {
+        console.log(i+ " Fizz" );
+        }
+        else if ( i%5 === 0 ){ 
+        console.log(i+ " Buzz" );
+        }
+        else
+        console.log(i);
+
+        // Write a JavaScript program to sum the multiples of 3 and 5 under 1000.
+        var sum = 0;
+        for (var y = 0; y < 1000; y++){
+
+         if (y % 3 === 0 || y % 5 === 0){
+          sum += y;
+        console.log(sum);
+         }
+        }
+        // Iteraion to check if the number is odd or even for numbers from 0 to 20
+        for (var x =0;x<=20;x++){
+            if (x%2===0 ){
+                console.log(x, "is even number")
+            }
+            if (x%2!=0){
+                console.log (x,"is odd number")
+            }
+        }
+        // conditional statement to find the largest number 
+        // let num =[-2,4,-5,6,0]
+        var x=[-2, 4,-5, 6,0]
+        var largest=x[0]
+        for(var i=0;i<x.length;i++){
+            if(x[i]>largest){
+                largest=x[i]
+            }
+        }
+        console.log(largest)
+        // Using conditional statements, write a JavaScript program to find the largest of the
+        // following two numbers: 10 & 40
+       var y=10
+       var x=40
+       if (y>x){
+        console.log(y)
+       }
+       else 
+       console.log(x)
+      // Write a JavaScript program to find leap years from 2000 to 2022
+      function leapYear(year){
+        if(year%4===0 ||year%100===0 ||year%400===0){
+            console.log("It's a leap year")
+        }
+        else
+        console.log("It's not a leap year")
+      }
+      leapYear(2000)
+
+    </script>
+    
+</body>
+</html>
